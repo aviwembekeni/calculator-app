@@ -1,0 +1,83 @@
+body, html{
+  height: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrapper{
+  width: 90%;
+  max-width: 300px;
+  margin: 0px auto;
+  color: #fff;
+  min-height: 100%;
+}
+.transitional-entry{
+  transition: all ease-out .8s;
+  position: relative;
+}
+.transitional-entry.fade-in{
+  opacity: 0;
+}
+.transitional-entry.faded-in{
+  opacity: 1;
+}
+.transitional-entry.move-up{
+  bottom: -10px;
+}
+.transitional-entry.moved-up{
+  bottom: 0px;
+}
+.transitional-entry.move-down{
+  top: -10px;
+}
+.transitional-entry.moved-down{
+  top: 0px;
+}
+.calculator-screen{
+  background: #000;
+  width: 100%;
+  height: 150px;
+  text-align: right;
+}
+.calculator-title{
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #222;
+  text-transform: uppercase;
+}
+.display-box{
+  font-size: 30px;
+  padding: 10px;
+}
+.calculator-keypad{
+  display: flex;
+  flex-flow: row wrap;
+  background: #555;
+}
+.button{
+  flex: 0 0 25%;
+  text-align: center;
+  padding: 10px;
+  display: inline-flex;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-bottom: 1px solid #444;
+  border-left: 1px solid #444;
+  font-size: 25px;
+  font-weight: bold;
+  transition: all .5s;
+}
+.button:hover{
+  background: #333;
+}
+.button:last-child{
+  flex: 0 0 100%;
+}
